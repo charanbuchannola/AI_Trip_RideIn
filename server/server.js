@@ -16,7 +16,7 @@ connct();
 
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://ai-trip-ridein-frontend.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },
