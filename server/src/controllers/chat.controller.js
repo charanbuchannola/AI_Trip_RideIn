@@ -2,7 +2,6 @@ const { chatModel } = require("../models/chat");
 const chatWithGemini = require("../utils/gemini");
 const getWeather = require("../utils/weather");
 
-
 const intents = [
   {
     category: "Account Management",
@@ -62,7 +61,6 @@ const intents = [
       "Thank you for your feedback. For app crashes, please try reinstalling the application. We're continuously working on improvements, including features like dark mode.",
   },
 ];
-
 
 module.exports.chatController = async (req, res) => {
   const { message } = req.body;
