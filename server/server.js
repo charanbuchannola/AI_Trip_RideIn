@@ -1,17 +1,14 @@
 const dotenv = require("dotenv");
 dotenv.config();
-const app = require('./src/app')
+const app = require("./src/app");
 const http = require("http");
 const server = http.createServer(app);
 
 const connct = require("./src/db/db");
 
-
 const socketIo = require("socket.io");
 
 const jwt = require("jsonwebtoken"); // JWT for token verification
-
-
 
 connct();
 
