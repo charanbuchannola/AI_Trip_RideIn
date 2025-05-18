@@ -5,12 +5,11 @@ const http = require("http");
 const server = http.createServer(app);
 
 const connct = require("./src/db/db");
+connct();
 
 const socketIo = require("socket.io");
 
 const jwt = require("jsonwebtoken"); // JWT for token verification
-
-connct();
 
 // server.js
 
